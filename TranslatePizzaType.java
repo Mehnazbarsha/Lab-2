@@ -1,41 +1,20 @@
-public static class TranslatePizzaType {
+public class TranslatePizzaType {
 
     public static String fromPizzaTypeEnumToString(PizzaType pizzaType) {
-        
         switch (pizzaType) {
-            case PizzaType.Cheese:
+            case CHEESE:
                 return "Cheese";
-                break;
-        
-            case PizzaType.Peperoni:
-                return "Peperoni";
-                break;
-
-            case PizzaType.Greek:
+            case PEPPERONI:
+                return "Pepperoni";
+            case GREEK:
                 return "Greek";
-                break;
-        
-            case PizzaType.GlutenFree:
+            case GLUTEN_FREE:
                 return "GlutenFree";
-                break;
-
-            case PizzaType.Vegan:
+            case VEGAN:
                 return "Vegan";
-                break;
-        
             default:
                 System.err.println("Not a valid pizza type");
-                break;
+                return "";
         }
     }
-
 }
-
-, 
-    Greek,
-    Peperoni,
-    GlutenFree,
-    Vegan
-
-    
-
